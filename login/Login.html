@@ -4,18 +4,36 @@
     <meta charset="UTF-8">
     <title>欢迎您，请登录</title>
     <style>
-        body{
+        body {
             margin: 0;
             padding: 0;
-            background: url("../assets/img/bg_login.jpg")  no-repeat center fixed;
+            background: url("../assets/img/bg_login.jpg") no-repeat center fixed;
         }
 
         .login-body {
             width: 320px;
             height: 300px;
             text-align: center;
-            margin: 0 auto;
+            /*margin: 0 auto; 水平居中*/
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-top: -150px;
+            margin-left: -160px;
+            background-color: rgba(255, 255, 255, 0.3);
+
         }
+
+        /*
+        颜色透明：
+        1.第一种方式：
+         background-color: #ffffff;
+         opacity: 0.5;
+         2.第二种方式
+         background-color: rgba(255, 255, 255, 0.3);
+        */
+
+        /**/
     </style>
 </head>
 <body>
