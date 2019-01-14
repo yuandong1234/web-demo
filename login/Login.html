@@ -13,7 +13,7 @@
         .login-body {
             width: 320px;
             height: 300px;
-            text-align: center;
+            /*text-align: center;*/
             /*margin: 0 auto; 水平居中*/
             position: absolute;
             left: 50%;
@@ -21,7 +21,8 @@
             margin-top: -150px;
             margin-left: -160px;
             background-color: rgba(255, 255, 255, 0.3);
-
+            border: none;
+            border-radius: 10px;
         }
 
         /*
@@ -33,23 +34,67 @@
          background-color: rgba(255, 255, 255, 0.3);
         */
 
+        .group-control {
+            width: 100%;
+            text-align: center;
+        }
+
+        input {
+            width: 260px;
+            height: 25px;
+            /*overflow: hidden;*/
+            margin-top: 10px;
+            padding: 5px;
+            border: 2px solid rgb(221, 221, 221);
+            border-radius: 5px;
+            /*background:none; 去除背景*/
+            outline: none;
+        }
+
+        input:focus {
+            border: 2px solid rgb(201, 152, 156);
+        }
+
+        button {
+            width: 260px;
+            height: 25px;
+            box-sizing: content-box;
+            margin-top: 10px;
+            padding: 5px;
+            border: 2px solid rgb(68,88,125);
+            background-color: #44587D;
+            border-radius: 5px;
+            color: white;
+            font-size: 18px;
+            font-family: "微软雅黑 Light";
+        }
+        button:hover{
+            background-color: #384E73;
+        }
+
     </style>
 </head>
 <body>
 <div class="container">
-    <h1>Yuong ,欢迎您！</h1>
     <!--登录界面-->
     <div class="login-body">
-        <form class="login-form">
+        <div>
+            <h1> Yuong,欢迎你！</h1>
+
+        </div>
+        <form class="login-form" action="" method="get">
             <!--登陆账户-->
-            <div>
+            <div class="group-control">
                 <input type="text" placeholder="用户名" required="">
             </div>
             <!--登陆密码-->
-            <div>
+            <div class="group-control">
                 <input type="password" placeholder="密码" required="">
             </div>
-            <button type="submit">登录</button>
+            <div class="group-control">
+                <button type="submit">登 录</button>
+            </div>
+
         </form>
     </div>
 
